@@ -1,0 +1,135 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 200px; /* Add padding to the navbar */
+    margin-right: 200px;
+}
+
+
+.logo-search-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    
+   
+}
+
+.search-input {
+    width: 600px;
+    padding: 2px;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.search-container {
+    position: relative;
+
+}
+
+
+.icon-container {
+    font-weight: bold;
+  
+    color: black;
+    
+}
+
+.sign-in-container {
+    display: flex;
+    align-items: center;
+}
+.icon-link i {
+    color: black;
+    font-size: 1.5em;
+}
+
+.icon-link {
+    font-weight: bold;
+    color: black;
+}
+
+
+.second-navbar {
+    margin: 0;
+   
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000;
+    color: #f9f8f8;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.second-navbar .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px; /* Adjust spacing between dropdowns */
+}
+
+.btn-group > .dropdown-toggle{
+    display: none !important;
+}
+.btn-group>.btn:first-child{
+    border-radius: 5px !important;
+}
+.btn-group:hover .btn-danger {
+    background-color: white;
+    color: black;
+  }
+  
+
+
+.second-navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #f9f8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.second-navbar {
+ display: flex;
+ justify-content: center;
+ background-color: #000;
+
+}
+
+
+
+
+.btn-group {
+   
+    margin-right: 20px; /* Add some margin to separate the buttons */
+  }
+  
+  .btn-danger {
+    color: white; /* Set the text color to white */
+    background-color: #000;
+    border: #000;
+  }
+
+
+  /* Show the dropdown menu on hover */
+  .btn-group:hover .dropdown-menu {
+    display: block;
+  }
+  
+  

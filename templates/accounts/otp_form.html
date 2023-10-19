@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+{% block content %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+</ul>
+{% endif %}
+
+<div class="container">
+    <div class="row justify-content-center pt-5">
+        <div class="col-md-6 login-container">
+            <h2 class="text-center mb-4 text-white">Verify OTP</h2>
+
+            <form method="post" action="{% url 'verify_otp_view' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="{{ form.otp.id_for_label }}" class="text-white">{{ form.otp.label }}</label>
+                    {{ form.otp }}
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Verify OTP</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
